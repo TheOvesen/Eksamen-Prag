@@ -1,0 +1,143 @@
+*
+{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.sidebar
+{
+    position: fixed;
+    width: 20%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.logo_container
+{
+    position: relative;
+    width: 100%;
+}
+
+.logo
+{
+    position: relative;
+    width: 80%;
+    left: 50%;
+    padding: 3vh 0 0 0;
+    transform: translateX(-50%);
+}
+
+.logo_titel
+{
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 6vw;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.menu
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-top: 20px;
+}
+
+.menu_knap
+{
+    position: relative;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1.2vw;
+    display: block;
+    width: 50%;
+    border: 2px #888888 solid;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.menu_instagram
+{
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    font-size: 4.5vw;
+    color: black;
+}
+
+.menu_facebook
+{
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    font-size: 4.5vw;
+    color: black;
+}
+
+.menu_knap:link, .logo_container:link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.menu_knap:visited, .logo_container:visited
+{
+    color: black;
+}
+
+.menu_omos:hover, .highlight_omos
+{
+    border-color: black;
+}
+
+.menu_norrebro:hover, .highlight_norrebro
+{
+    border-color: #c6e1bf;
+}
+
+.some_norrebro
+{
+    color: #9d191b;
+}
+
+.menu_vesterbro:hover, .highlight_vesterbro
+{
+    border-color: #F5A892;
+}
+
+.some_vesterbro
+{
+    color: #c2bd11;
+}
+
+.menu_aarhus:hover, .highlight_aarhus
+{
+    border-color: #c72547;
+}
+
+.some_aarhus
+{
+    color: #4469ff;
+}
+
+.menu_follow
+{
+    position: absolute;
+    text-align: center;
+    font-size: 1.5vw;
+    bottom: 2vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content
+{
+    position: absolute;
+    width: 80%;
+    left: 20%;
+    min-height: 100vh;
+    background-color: #cccccc;
+}
