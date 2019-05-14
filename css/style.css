@@ -252,8 +252,9 @@
 {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translateX(-50%) translateY(-50%);
+    width: 100%;
 }
 
 .aarhus_decorUR
@@ -312,6 +313,7 @@
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+    width: 100%;
 }
 
 .norrebro_decorUR
@@ -370,6 +372,7 @@
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+    width: 100%;
 }
 
 .vesterbro_decorUR
