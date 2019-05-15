@@ -12,17 +12,19 @@
 </head>
 <body>
     <aside class="sidebar">
-        <a href="index.html" class="logo_container">
-            <img src="img/Logo_Vesterbro.png" alt="PRAG Logo" class="logo">
-            <h1 class="logo_titel">PRAG</h1>
-        </a>
-
-        <nav class="menu">
-            <a href="omos.html" class="menu_knap menu_omos">Om os</a>
-            <a href="norrebro.html" class="menu_knap menu_norrebro">PRAG Nørrebro</a>
-            <a href="vesterbro.html" class="menu_knap highlight_vesterbro">PRAG Vesterbro</a>
-            <a href="aarhus.html" class="menu_knap menu_aarhus">PRAG Aarhus</a>
-        </nav>
+        <div class="menu_container">
+            <a href="index.html" class="logo_container">
+                <img src="img/Logo_Vesterbro.png" alt="PRAG Logo" class="logo">
+                <h1 class="logo_titel">PRAG</h1>
+            </a>
+    
+            <nav class="menu">
+                <a href="omos.html" class="menu_knap menu_omos">Om os</a>
+                <a href="norrebro.html" class="menu_knap menu_norrebro">PRAG Nørrebro</a>
+                <a href="vesterbro.html" class="menu_knap highlight_vesterbro">PRAG Vesterbro</a>
+                <a href="aarhus.html" class="menu_knap menu_aarhus">PRAG Aarhus</a>
+            </nav>
+        </div>
 
         <h1 class="menu_follow">FØLG OS</h1>
 
@@ -36,16 +38,19 @@
     </aside>
 
     <main class="content">
-            <div class="vesterbro_upper">
-                <img src="img/Vesterbro_Facade.PNG" alt="Promo video">
-            </div>
-    
-            <div class="vesterbro_lower">
-                <img src="img/Aarhus_Instagram.PNG" alt="">
-            </div>
-    
-            <img class="vesterbro_decorUR" src="img/decor/DecorVesterbroYellow.png" alt="">
-            <img class="vesterbro_decorBL" src="img/decor/DecorVesterbroPink.png" alt="">
+        <div class="vesterbro_upper">
+            <img src="img/Vesterbro_Facade.PNG" alt="Promo video">
+        </div>
+
+        <div class="vesterbro_lower">
+            <div class="instagram_header">Nyheder fra Vesterbro!</div>
+            <!-- LightWidget WIDGET -->
+            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+            <iframe src="//lightwidget.com/widgets/5e65c7cac7a956d49138272b4eb5dee0.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        </div>
+
+        <img class="content_decor_UR" src="img/decor/DecorVesterbroYellow.png" alt="">
+        <img class="content_decor_BL" src="img/decor/DecorVesterbroPink.png" alt="">
     </main>
 </body>
 </html>
