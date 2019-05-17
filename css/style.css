@@ -374,3 +374,100 @@
 {
     width: 100%;
 }
+
+/*******************************/
+/* Vesterbro */
+/*******************************/
+
+.omos_left
+{
+    position: absolute;
+    width: 25%;
+    left: 4%;
+    top: 8%;
+}
+
+.omos_header
+{
+    position: relative;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 3vw;
+}
+
+.omos_text
+{
+    position: relative;
+    margin-top: 5%;
+}
+
+.omos_right
+{
+    position: absolute;
+    width: 55%;
+    top: 10%;
+    right: 8%;
+}
+
+.omos_cards
+{
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.omos_locationtext
+{
+    text-align: center;
+    font-size: 2vw;
+}
+
+.omos_right > .omos_locationtext
+{
+    margin: 3% 0 6% 0;
+}
+
+.omos_locations
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.omos_pin
+{
+    font-size: 5vw;
+    text-align: center;
+}
+
+.omos_pin:link, .omos_pin:visited
+{
+    text-decoration: none;
+    color: black;
+}
+
+.omos_pin i
+{
+    transition: .2s ease;
+}
+
+.omos_pin:hover i
+{
+    transform: translateY(-10px);
+}
+
+.omos_pin:hover .omos_pin_norrebro
+{
+    color: #9d191b;
+}
+
+.omos_pin:hover .omos_pin_vesterbro
+{
+    color: #c2bd11;
+}
+
+.omos_pin:hover .omos_pin_aarhus
+{
+    color: #86d5ee;
+}
