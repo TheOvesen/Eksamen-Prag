@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="img/icon/Forside_Icon.png" type="image">
+    <link rel="icon" href="img/icon/Forside_Icon.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Raleway" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +15,7 @@
         <div class="menu_container">
             <a href="index.html" class="logo_container">
                 <img src="img/Logo_Forside.png" alt="PRAG Logo" class="logo">
-                <h1 class="logo_titel">PRAG</h1>
+                <p class="logo_titel">PRAG</p>
             </a>
     
             <nav class="menu">
@@ -26,7 +26,18 @@
             </nav>
         </div>
 
-        <h1 class="menu_follow">FØLG OS</h1>
+        <nav class="mobile_menu_icon">
+            <i class="fas fa-bars"></i>
+        </nav>
+
+        <div class="mobile_menu">
+            <a href="omos.html" class="menu_knap menu_omos">Om os</a>
+            <a href="norrebro.html" class="menu_knap menu_norrebro">PRAG Nørrebro</a>
+            <a href="vesterbro.html" class="menu_knap menu_vesterbro">PRAG Vesterbro</a>
+            <a href="aarhus.html" class="menu_knap menu_aarhus">PRAG Aarhus</a>
+        </div>
+
+        <p class="menu_follow">FØLG OS</p>
 
         <a href="https://www.instagram.com/pragcopenhagen/" target="_blank" class="menu_instagram">
             <i class="fab fa-instagram"></i>
@@ -53,8 +64,17 @@
             <img class="index_lower_img" src="img/Forside_Lower2.jpg" alt="">
         </div>
 
+        <div class="aarhus_lower">
+            <div class="instagram_header">Nyheder fra vores Instagram!</div>
+            <!-- LightWidget WIDGET -->
+            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+            <iframe src="//lightwidget.com/widgets/ffc3e8fe68ca5dc4ae5da515914ead1c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        </div>
+
         <img class="content_decor_UR" src="img/decor/DecorBlack.png" alt="">
         <img class="content_decor_BL" src="img/decor/DecorBlack.png" alt="">
     </main>
+
+    <script src="js/menu.js"></script>
 </body>
 </html>
