@@ -16,13 +16,19 @@
 </head>
 
 <body>
+    <!-- Barren ude til venstre/oppe i toppen (på mobil) -->
     <aside class="sidebar">
+
+        <!-- Container til hele PC-menuen, for at gøre den lettere at flytte rundt -->
         <div class="menu_container">
+
+            <!-- Logo med titel -->
             <a href="index.html" class="logo_container">
                 <img src="img/Logo_Forside.png" alt="PRAG Logo" class="logo">
                 <p class="logo_titel">PRAG</p>
             </a>
 
+            <!-- Navigationsmenuen; skjules på mobil-layout -->
             <nav class="menu">
                 <a href="omos.html" class="menu_knap menu_omos">Om os</a>
                 <a href="norrebro.html" class="menu_knap menu_norrebro">PRAG Nørrebro</a>
@@ -31,10 +37,12 @@
             </nav>
         </div>
 
+        <!-- Menuknappen til mobil; skjules på PC-layout -->
         <div class="mobile_menu_icon">
             <i class="fas fa-bars"></i>
         </div>
 
+        <!-- Navigationsmenu til mobil; skjules på PC-layout -->
         <nav class="mobile_menu">
             <a href="omos.html" class="menu_knap menu_omos">Om os</a>
             <a href="norrebro.html" class="menu_knap menu_norrebro">PRAG Nørrebro</a>
@@ -42,6 +50,7 @@
             <a href="aarhus.html" class="menu_knap menu_aarhus">PRAG Aarhus</a>
         </nav>
 
+        <!-- SoMe elementer herunder -->
         <p class="menu_follow">FØLG OS</p>
 
         <a href="https://www.instagram.com/pragcopenhagen/" target="_blank" class="menu_instagram">
@@ -53,11 +62,35 @@
         </a>
     </aside>
 
+    <!-- Sidens hovedindhold -->
     <main class="content">
+
+        <!-- Header/banner med slideshow -->
         <header class="index_upper">
-            <img src="img/Forside_Start.jpg" alt="Promo video">
+
+            <!-- Slideshow container - Oprindelig kode hentet fra https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="img/Forside_Start.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/Forside_Slide3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/Forside_Slide2.jpg" style="width:100%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
         </header>
 
+        <!-- Sektionen under banneren; skjules på mobil-layout -->
         <section class="index_lower">
 
             <img class="index_lower_img" src="img/Forside_Lower1.jpg" alt="Billede af mand">
@@ -69,6 +102,7 @@
             <img class="index_lower_img" src="img/Forside_Lower2.jpg" alt="Billede af kvinde">
         </section>
 
+        <!-- Containeren til Instagram-widgetten -->
         <section class="instagram_container">
             <h1 class="instagram_header">Nyheder fra vores Instagram!</h1>
             <!-- LightWidget WIDGET -->
@@ -78,11 +112,12 @@
                 style="width:100%;border:0;overflow:hidden;"></iframe>
         </section>
 
-        <!-- <img class="content_decor_UR" src="img/decor/DecorBlack.png" alt=""> -->
+        <!-- Hjørnedekoration -->
         <img class="content_decor_BL" src="img/decor/DecorBlack.png" alt="">
     </main>
 
     <script src="js/menu.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 
 </html>

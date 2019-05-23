@@ -15,13 +15,19 @@
 </head>
 
 <body>
+    <!-- Barren ude til venstre/oppe i toppen (på mobil) -->
     <aside class="sidebar">
+
+        <!-- Container til hele PC-menuen, for at gøre den lettere at flytte rundt -->
         <div class="menu_container">
+
+            <!-- Logo med titel -->
             <a href="index.html" class="logo_container">
                 <img src="img/Logo_Norrebro.png" alt="PRAG Logo" class="logo">
                 <p class="logo_titel">PRAG</p>
             </a>
 
+            <!-- Navigationsmenuen; skjules på mobil-layout -->
             <nav class="menu">
                 <a href="omos.html" class="menu_knap menu_omos">Om os</a>
                 <a href="norrebro.html" class="menu_knap highlight_norrebro">PRAG Nørrebro</a>
@@ -30,10 +36,12 @@
             </nav>
         </div>
 
+        <!-- Menuknappen til mobil; skjules på PC-layout -->
         <div class="mobile_menu_icon">
             <i class="fas fa-bars"></i>
         </div>
 
+        <!-- Navigationsmenu til mobil; skjules på PC-layout -->
         <nav class="mobile_menu">
             <a href="omos.html" class="menu_knap menu_omos">Om os</a>
             <a href="norrebro.html" class="menu_knap highlight_norrebro">PRAG Nørrebro</a>
@@ -41,6 +49,7 @@
             <a href="aarhus.html" class="menu_knap menu_aarhus">PRAG Aarhus</a>
         </nav>
 
+        <!-- SoMe elementer herunder -->
         <p class="menu_follow">FØLG OS</p>
 
         <a href="https://www.instagram.com/pragcopenhagen/" target="_blank" class="menu_instagram some_norrebro">
@@ -52,11 +61,15 @@
         </a>
     </aside>
 
+    <!-- Sidens hovedindhold -->
     <main class="content">
+
+        <!-- Header med facadebillede -->
         <header class="norrebro_upper">
             <img src="img/Norrebro_Facade.jpg" alt="Promo video">
         </header>
 
+        <!-- Containeren til Instagram-widgetten -->
         <section class="instagram_container">
             <h1 class="instagram_header">Nyheder fra Nørrebro!</h1>
             <!-- LightWidget WIDGET -->
@@ -65,6 +78,7 @@
                 allowtransparency="true" class="lightwidget-widget"></iframe>
         </section>
 
+        <!-- Hjørnedekorationer -->
         <img class="content_decor_UR" src="img/decor/DecorNorrebroRed.png" alt="">
         <img class="content_decor_BL" src="img/decor/DecorNorrebroGreen.png" alt="">
     </main>

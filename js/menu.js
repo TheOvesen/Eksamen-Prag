@@ -1,3 +1,4 @@
+// Deklaration af variabler for overskuelighedens skyld
 var menu = document.getElementsByClassName("mobile_menu")[0];
 var menuButton = document.getElementsByClassName("mobile_menu_icon")[0];
 var content = document.getElementsByClassName("content")[0];
@@ -6,8 +7,11 @@ var facebook = document.getElementsByClassName("menu_facebook")[0];
 var instagram = document.getElementsByClassName("menu_instagram")[0];
 var menuVisible = 0;
 
+// Indstil layoutet efter menuVisible-variablen
 function setLayout() {
     "use strict";
+
+    // Mobilmenuen er synlig
     if (menuVisible === 1) {
         menu.style.top = "38vh";
         menu.style.opacity = "1";
@@ -20,6 +24,7 @@ function setLayout() {
         facebook.style.zIndex = "3";
     }
 
+    // Mobilmenuen er skjult
     if (menuVisible === 0) {
         menu.style.top = "0";
         menu.style.opacity = "0";
@@ -32,6 +37,7 @@ function setLayout() {
         facebook.style.zIndex = "1";
     }
 
+    // Skift til PC-layout
     if (menuVisible === -1) {
         menu.style.top = "0";
         menu.style.opacity = "0";
@@ -46,6 +52,7 @@ function setLayout() {
     }
 }
 
+// Hvis menuknappen klikkes på, vis eller skjul mobilmenuen
 menuButton.addEventListener("click", function () {
     "use strict";
     if (menuVisible === 0) {
@@ -57,6 +64,7 @@ menuButton.addEventListener("click", function () {
     setLayout();
 });
 
+// Hvis vinduets størrelse ændrer sig, hold øje med om størrelsen går over 900 px. Hvis den gør, skift til PC-layout
 window.addEventListener("resize", function () {
     "use strict";
     if (window.innerWidth > 900) {
