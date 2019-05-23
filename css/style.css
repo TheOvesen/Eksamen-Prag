@@ -1,12 +1,10 @@
-*
-{
+* {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
 }
 
-.sidebar
-{
+.sidebar {
     position: fixed;
     width: 20%;
     height: 100vh;
@@ -15,38 +13,34 @@
     z-index: 2;
 }
 
-.menu_container
-{
+.menu_container {
     position: absolute;
     width: 100%;
     top: 5%;
+    z-index: 1;
 }
 
-.logo_container
-{
+.logo_container {
     position: absolute;
     width: 100%;
-    z-index: 2;
+    z-index: 4;
 }
 
-.logo
-{
+.logo {
     position: relative;
     width: 70%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.logo_titel
-{
+.logo_titel {
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 5vw;
     font-weight: lighter;
     text-align: center;
 }
 
-.menu
-{
+.menu {
     position: absolute;
     width: 100%;
     top: 22vw;
@@ -55,19 +49,17 @@
     align-content: space-between;
 }
 
-.mobile_menu_icon
-{
+.mobile_menu_icon {
     display: none;
     position: absolute;
-    left: 3vh;
+    left: 2vh;
     top: 1vh;
     z-index: 5;
     font-size: 8vh;
     cursor: pointer;
 }
 
-.mobile_menu
-{
+.mobile_menu {
     display: none;
     position: absolute;
     top: 0;
@@ -77,8 +69,7 @@
     transition: 0.5s ease;
 }
 
-.menu_knap
-{
+.menu_knap {
     position: relative;
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 1.2vw;
@@ -93,72 +84,68 @@
     transition: 0.2s ease;
 }
 
-.menu_instagram
-{
+.menu_instagram {
     position: absolute;
     left: 5%;
     bottom: 0;
     font-size: 4.5vw;
     color: black;
+    transition: 0.5s ease;
 }
 
-.menu_facebook
-{
+.menu_facebook {
     position: absolute;
     right: 5%;
     bottom: 0;
     font-size: 4.5vw;
     color: black;
+    transition: 0.5s ease;
 }
 
-.menu_knap:link, .logo_container:link
-{
+.menu_knap:link,
+.logo_container:link {
     text-decoration: none;
     color: black;
 }
 
-.menu_knap:visited, .logo_container:visited
-{
+.menu_knap:visited,
+.logo_container:visited {
     color: black;
 }
 
-.menu_omos:hover, .highlight_omos
-{
+.menu_omos:hover,
+.highlight_omos {
     border-color: black;
 }
 
-.menu_norrebro:hover, .highlight_norrebro
-{
+.menu_norrebro:hover,
+.highlight_norrebro {
     border-color: #c6e1bf;
 }
 
-.some_norrebro
-{
+.some_norrebro {
     color: #9d191b;
 }
 
-.menu_vesterbro:hover, .highlight_vesterbro
-{
+.menu_vesterbro:hover,
+.highlight_vesterbro {
     border-color: #F5A892;
 }
 
-.some_vesterbro
-{
+.some_vesterbro {
     color: #c2bd11;
 }
 
-.menu_aarhus:hover, .highlight_aarhus
-{
+.menu_aarhus:hover,
+.highlight_aarhus {
     border-color: #c72547;
 }
 
-.some_aarhus
-{
+.some_aarhus {
     color: #86d5ee;
 }
 
-.menu_follow
-{
+.menu_follow {
     position: absolute;
     text-align: center;
     font-size: 1.5vw;
@@ -167,8 +154,7 @@
     transform: translateX(-50%);
 }
 
-.content
-{
+.content {
     position: absolute;
     width: 80%;
     top: 0;
@@ -179,8 +165,7 @@
     transition: 0.5s ease;
 }
 
-.content_decor_UR
-{
+.content_decor_UR {
     position: fixed;
     top: 0;
     right: 0;
@@ -188,8 +173,7 @@
     opacity: 0.5;
 }
 
-.content_decor_BL
-{
+.content_decor_BL {
     position: fixed;
     bottom: 0;
     left: 20%;
@@ -198,15 +182,20 @@
     opacity: 0.5;
 }
 
-.lightwidget-widget
-{
+.lightwidget-widget {
     width: 100%;
     border: 0;
     overflow: hidden;
 }
 
-.instagram_header
-{
+.instagram_container {
+    position: relative;
+    background-color: white;
+    margin: 0 10px 10px 10px;
+    width: calc(100% - 20px);
+}
+
+.instagram_header {
     text-align: center;
     font-size: 3vw;
     width: 100%;
@@ -218,8 +207,7 @@
 /* Forside */
 /*******************************/
 
-.index_upper
-{
+.index_upper {
     position: relative;
     background-color: white;
     margin: 10px;
@@ -228,8 +216,7 @@
     overflow: hidden;
 }
 
-.index_upper img
-{
+.index_upper img {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -237,8 +224,7 @@
     width: 100%;
 }
 
-.index_lower
-{
+.index_lower {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -246,23 +232,20 @@
     background-color: white;
     margin: 0 10px 10px 10px;
     width: calc(100% - 20px);
-    /*height: calc(50vh - 10px);*/
+    height: calc(50vh - 10px);
 }
 
-.index_lower_img
-{
-    width: 20%;
+.index_lower_img {
+    height: 100%;
 }
 
-.index_lower_midbox
-{
+.index_lower_midbox {
     position: relative;
     width: 40%;
     background-color: white;
 }
 
-.index_lower_midbox img
-{
+.index_lower_midbox img {
     position: absolute;
     width: 80%;
     left: 50%;
@@ -271,33 +254,30 @@
     z-index: 1;
 }
 
-.index_lower_midbox_text1
-{
+.index_lower_midbox_text1 {
     position: absolute;
-    width: 60%;
-    left: 5%;
-    top: 2%;
+    width: 40%;
+    left: 20%;
+    top: 15%;
     z-index: 2;
-    font-size: 2.5vw;
+    font-size: 1.7vw;
 }
 
-.index_lower_midbox_text2
-{
+.index_lower_midbox_text2 {
     position: absolute;
-    width: 60%;
-    right: 5%;
-    bottom: 2%;
-    text-align: right;
+    width: 40%;
+    right: 15%;
+    bottom: 15%;
+    /*text-align: right;*/
     z-index: 2;
-    font-size: 2.5vw;
+    font-size: 1.7vw;
 }
 
 /*******************************/
 /* Aarhus */
 /*******************************/
 
-.aarhus_upper
-{
+.aarhus_upper {
     position: relative;
     background-color: white;
     margin: 10px;
@@ -306,8 +286,7 @@
     overflow: hidden;
 }
 
-.aarhus_upper img
-{
+.aarhus_upper img {
     position: absolute;
     left: 50%;
     top: 55%;
@@ -315,19 +294,7 @@
     width: 100%;
 }
 
-.aarhus_lower
-{
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    background-color: white;
-    margin: 0 10px 10px 10px;
-    width: calc(100% - 20px);
-    /*min-height: calc(50vh - 10px);*/
-}
-
-.aarhus_lower_img
-{
+.aarhus_lower_img {
     width: 100%;
 }
 
@@ -335,8 +302,7 @@
 /* Nørrebro */
 /*******************************/
 
-.norrebro_upper
-{
+.norrebro_upper {
     position: relative;
     background-color: white;
     margin: 10px;
@@ -345,8 +311,7 @@
     overflow: hidden;
 }
 
-.norrebro_upper img
-{
+.norrebro_upper img {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -354,19 +319,7 @@
     width: 100%;
 }
 
-.norrebro_lower
-{
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    background-color: white;
-    margin: 0 10px 10px 10px;
-    width: calc(100% - 20px);
-    min-height: calc(50vh - 10px);
-}
-
-.norrebro_lower_img
-{
+.norrebro_lower_img {
     width: 100%;
 }
 
@@ -374,8 +327,7 @@
 /* Vesterbro */
 /*******************************/
 
-.vesterbro_upper
-{
+.vesterbro_upper {
     position: relative;
     background-color: white;
     margin: 10px;
@@ -384,8 +336,7 @@
     overflow: hidden;
 }
 
-.vesterbro_upper img
-{
+.vesterbro_upper img {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -393,19 +344,7 @@
     width: 100%;
 }
 
-.vesterbro_lower
-{
-    flex-direction: row;
-    justify-content: center;
-    position: relative;
-    background-color: white;
-    margin: 0 10px 10px 10px;
-    width: calc(100% - 20px);
-    min-height: calc(50vh - 10px);
-}
-
-.vesterbro_lower_img
-{
+.vesterbro_lower_img {
     width: 100%;
 }
 
@@ -413,96 +352,82 @@
 /* Om Os */
 /*******************************/
 
-.omos_left
-{
+.omos_left {
     position: absolute;
     width: 25%;
     left: 4%;
     top: 8%;
 }
 
-.omos_header
-{
+.omos_header {
     position: relative;
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 3vw;
 }
 
-.omos_text
-{
+.omos_text {
     position: relative;
     margin-top: 5%;
 }
 
-.omos_right
-{
+.omos_right {
     position: absolute;
     width: 55%;
     top: 10%;
     right: 8%;
 }
 
-.omos_cards
-{
+.omos_cards {
     position: relative;
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.omos_locationtext
-{
+.omos_locationtext {
     text-align: center;
     font-size: 2vw;
 }
 
-.omos_right > .omos_locationtext
-{
+.omos_right>.omos_locationtext {
     margin: 3% 0 6% 0;
 }
 
-.omos_locations
-{
+.omos_locations {
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.omos_pin
-{
+.omos_pin {
     font-size: 5vw;
     text-align: center;
 }
 
-.omos_pin:link, .omos_pin:visited
-{
+.omos_pin:link,
+.omos_pin:visited {
     text-decoration: none;
     color: black;
 }
 
-.omos_pin i
-{
+.omos_pin i {
     transition: .2s ease;
 }
 
-.omos_pin:hover i
-{
+.omos_pin:hover i {
     transform: translateY(-10px);
 }
 
-.omos_pin:hover .omos_pin_norrebro
-{
+.omos_pin:hover .omos_pin_norrebro {
     color: #9d191b;
 }
 
-.omos_pin:hover .omos_pin_vesterbro
-{
+.omos_pin:hover .omos_pin_vesterbro {
     color: #c2bd11;
 }
 
-.omos_pin:hover .omos_pin_aarhus
-{
+.omos_pin:hover .omos_pin_aarhus {
     color: #86d5ee;
 }
 
@@ -510,10 +435,8 @@
 /* Responsivitet */
 /*******************************/
 
-@media only screen and (max-width: 900px)
-{
-    .sidebar
-    {
+@media only screen and (max-width: 900px) {
+    .sidebar {
         position: absolute;
         width: 100%;
         height: 33vh;
@@ -524,108 +447,118 @@
         transition: 0.5s ease;
     }
 
-    .logo_container
-    {
+    .logo_container {
         left: 50%;
         transform: translateX(-50%);
         width: 50vw;
         height: 20vh;
     }
 
-    .logo_titel
-    {
+    .logo_titel {
         font-size: 8.5vh;
     }
 
-    .logo
-    {
+    .logo {
         width: auto;
         height: 20vh;
     }
 
-    .mobile_menu, .mobile_menu_icon
-    {
+    .mobile_menu,
+    .mobile_menu_icon {
         display: block;
     }
 
-    .menu
-    {
+    .menu {
         display: none;
     }
 
-    .menu_knap
-    {
-        padding: 10px;
+    .menu_knap {
+        padding: 1vh;
         font-size: 2.5vh;
         white-space: nowrap;
         z-index: 1;
+        margin-bottom: 2.5vh;
     }
 
-    .menu_instagram, .menu_facebook, .menu_follow
-    {
+    .menu_container {
+        z-index: 2;
+        height: 95%;
+    }
+
+    .menu_instagram,
+    .menu_facebook {
+        z-index: 1;
+        font-size: 8vh;
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+
+    .menu_instagram {
+        left: calc(25% - 10px);
+    }
+
+    .menu_facebook {
+        right: calc(25% - 10px);
+    }
+
+    .menu_follow {
         display: none;
     }
 
-    .content_decor_UR
-    {
+    .content_decor_UR {
         position: fixed;
         width: 20%;
         z-index: 3;
     }
-    
-    .content_decor_BL
-    {
+
+    .content_decor_BL {
         position: fixed;
         left: 0;
         width: 10%;
         z-index: 3;
     }
 
-    .content
-    {
+    .content {
         width: 100%;
         left: 0;
         top: 33vh;
         z-index: 2;
     }
 
-    .instagram_header
-    {
+    .instagram_header {
         font-size: 6vw;
     }
 
-    .index_upper img
-    {
-        width: auto;
-        height: calc(50vh - 20px);
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
+    .index_upper {
+        height: auto;
     }
 
-    .index_lower
-    {
+    .index_upper img {
+        position: relative;
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+
+    .index_lower {
         display: none;
     }
-    
-    .index_lower_midbox
-    {
+
+    .index_lower_midbox {
         position: relative;
         width: 50%;
         background-color: white;
     }
 
-    .index_lower_midbox_text1
-    {
-        font-size: 3.5vw;
-    }
-    
-    .index_lower_midbox_text2
-    {
+    .index_lower_midbox_text1 {
         font-size: 3.5vw;
     }
 
-    .aarhus_upper img
-    {
+    .index_lower_midbox_text2 {
+        font-size: 3.5vw;
+    }
+
+    .aarhus_upper img {
         width: auto;
         height: calc(50vh - 20px);
         left: 20%;
@@ -633,8 +566,8 @@
         min-width: 100%;
     }
 
-    .norrebro_upper img, .vesterbro_upper img
-    {
+    .norrebro_upper img,
+    .vesterbro_upper img {
         width: auto;
         height: calc(50vh - 20px);
         left: 40%;
@@ -642,13 +575,11 @@
         min-width: 100%;
     }
 
-    .omos_header
-    {
+    .omos_header {
         font-size: 5vw;
     }
 
-    .omos_left
-    {
+    .omos_left {
         position: relative;
         width: 90%;
         margin-top: 5vh;
@@ -657,39 +588,33 @@
         transform: translateX(-50%);
     }
 
-    .omos_right
-    {
+    .omos_right {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
     }
 
-    .omos_pin
-    {
+    .omos_pin {
         font-size: 10vw;
         text-align: center;
         margin-top: 1vh;
         margin-bottom: 5vh;
     }
 
-    .omos_locationtext
-    {
+    .omos_locationtext {
         font-size: 4.5vw;
     }
 
-    .omos_pin_norrebro
-    {
+    .omos_pin_norrebro {
         color: #9d191b;
     }
-    
-    .omos_pin_vesterbro
-    {
+
+    .omos_pin_vesterbro {
         color: #c2bd11;
     }
-    
-    .omos_pin_aarhus
-    {
+
+    .omos_pin_aarhus {
         color: #86d5ee;
     }
 }
