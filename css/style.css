@@ -507,6 +507,15 @@
     color: #86d5ee;
 }
 
+.omos_credits
+{
+    position: absolute;
+    bottom: 1vh;
+    right: 1vw;
+    text-align: right;
+    font-size: 10pt;
+}
+
 /*******************************/
 /* Responsivitet */
 /*******************************/
@@ -684,7 +693,7 @@
         font-size: 10vw;
         text-align: center;
         margin-top: 1vh;
-        margin-bottom: 5vh;
+        margin-bottom: 7vh;
     }
 
     .omos_locationtext {
@@ -701,5 +710,14 @@
 
     .omos_pin_aarhus {
         color: #86d5ee;
+    }
+
+    .omos_credits
+    {
+        width: 100%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.5vw;
     }
 }
